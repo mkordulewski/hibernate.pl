@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^((.*)\.)?(hibernate\.pl)$ [NC]
+RewriteRule ^ http://hibernate.org/ [R=302,L,NE]
